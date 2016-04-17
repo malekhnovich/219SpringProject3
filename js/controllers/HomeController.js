@@ -88,9 +88,51 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
-	
-	
+	},
+    {
+        title:'Requiem for a Dream',
+        iscore:8.4,
+        rating:'R',
+        runtime:102,
+        released: new Date('2000','12','15'),
+        country:'USA',
+        posters:['img/RequiemDream1.jpg','img/RequiemDream2.jpg'],
+        imdb: 'http://www.imdb.com/title/tt0180093/?ref_=ttmd_md_nm',
+        website:"http://hi-res.net/legacy/requiem-for-a-dream",
+        likes:213,
+        dislikes:112,
+        posterindex:0
+    },
+        {
+            title: 'American Beauty ',
+            iscore: 8.4,
+            rating: 'R',
+            runtime: 122,
+            released: new Date('1999', '10', '01'),
+            country: 'USA',
+            posters: ['img/AmericanBeauty1.jpg', 'img/AmericanBeauty2.jpg'],
+            imdb: 'http://www.imdb.com/title/tt0169547/?ref_=tt_rec_tt',
+            website: "http://www.dreamworks.com/ab/",
+            likes: 521,
+            dislikes: 132,
+            posterindex: 0
+
+        },
+        {
+            title: 'Eternal Sunshine of the Spotless Mind ',
+            iscore: 8.4,
+            rating: 'R',
+            runtime: 108,
+            released: new Date('2004', '03', '19'),
+            country: 'USA',
+            posters: ['img/ESSmind1.jpg', 'img/ESSmind2.jpg'],
+            imdb: 'http://www.imdb.com/title/tt0338013/?ref_=tt_rec_tti',
+            website: "http://www.focusfeatures.com/eternal_sunshine_of_the_spotless_mind",
+            likes: 773,
+            dislikes: 171,
+            posterindex: 0
+
+        },
   ];
 	
 	
