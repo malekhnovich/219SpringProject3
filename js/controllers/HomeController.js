@@ -110,7 +110,10 @@ $scope.title="IMDB + Max's Top 8 Movies";
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-		
+//7A like function
+$scope.like=function(index){
+    $scope.like++;
+}
 	
 	
 	

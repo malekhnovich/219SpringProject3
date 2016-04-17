@@ -38,7 +38,7 @@
       <div class="container">
 
         <div class="col-md-6"> 
-            <div class="thumbnail">
+            <div ng-repeat="movie in movies" class="thumbnail">
 
 					<img class="poster">{{movies[0].posters[0]}}</img>
 					<div class="imageInfo">{{movies[0].posterindex}}</div>
