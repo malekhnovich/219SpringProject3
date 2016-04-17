@@ -133,7 +133,7 @@ $scope.like=function(index){
  }
  //7D timeText
  $scope.timeText=function(minutes){
-     $scope.hour=minutes/60;
+     $scope.hour=Math.floor(minutes/60);
      $scope.min=minutes%60;
      return $scope.hour+"h "+$scope.min+"m";
  }

@@ -41,13 +41,13 @@
             <div class="thumbnail">
 
 					<img ng-click="posterClick($index)" class="poster" src="{{movies[$index].posters[movies[$index].posterindex]}}">
-					<div class="imageInfo">{{movies[$index].posterindex}}</div>
+					<div class="imageInfo">poster {{movies[$index].posterindex}} of {{movies[$index].posters.length-1}}</div>
 					
 					<p class="title">{{movies[$index].title}} ({{movies[$index].country}})</p>
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movies[$index].iscore}} </p>
-					<p class="runtime">Runtime: {{movies[$index].runtime}}</p>
+					<p class="runtime">Runtime: {{timeText(movies[$index].runtime)}}</p>
 					<p class="released">Released: {{movies[$index].released|date}} | Rated: {{movies[$index].rating}}</p>
-					<p class="websites">Websites: <a>{{movies[$index].imdb}}</a> | <a>{{movies[$index].website}}</a></p>
+					<p class="websites">Websites: <a href="{{movies[$index].imdb}}">{{movies[$index].imdb}}</a> | <a href="{{movies[$index].website}}">{{movies[$index].website}}</a></p>
 					
 		            <div class="social">
 		              <p ng-click="like($index)" class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movies[$index].likes}}</p>
@@ -61,8 +61,8 @@
 
     <div class="footer">
       <div class="container">
-		<a id="github" class="btn btn-lg btn-warning">
-			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> {{owner}} {{github}}
+		<a id="github" class="btn btn-lg btn-warning" href="{{github}}">
+			<i class="fa fa-lg fa-github pull-left" aria-hidden="true"></i> {{owner}}
   		</a>
       </div>
     </div>
