@@ -94,8 +94,12 @@ app.controller('HomeController', ['$scope', function($scope) {
   ];
 	
 	
+$scope.title="IMDB + Max's Top 8 Movies";
+//3B
+  $scope.owner="Max";
+//3C
+    $scope.github="https://github.com/malekhnovich/219SpringProject3";
 
-	
 	/* ADD VARIABLES FOR STEP 3 HERE */
 	
 	
