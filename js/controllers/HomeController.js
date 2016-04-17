@@ -111,9 +111,34 @@ $scope.title="IMDB + Max's Top 8 Movies";
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 //7A like function
+
 $scope.like=function(index){
-    $scope.like++;
+    $scope.movies[index].likes++;
+    console.log("The movie has been liked "+$scope.movies[index].likes+"times");
+
 }
+//7B dislike function
+ $scope.dislike=function(index){
+     $scope.movies[index].dislikes++;
+     console.log("The movie has been disliked "+$scope.movies[index].dislikes+"times");
+ }
+ //7C posterClick function
+ $scope.posterClick=function(index){
+     $scope.movies[index].posterindex++;
+     if($scope.movies[index].posterindex==$scope.movies[index].posters.length){
+         $scope.movies[index].posterindex=0;
+
+     }
+     console.log("The poster index is "+$scope.movies[index].posterindex);
+ }
+ //7D timeText
+ $scope.timeText=function(minutes){
+     $scope.hour=minutes/60;
+     $scope.min=minutes%60;
+     return $scope.hour+"h "+$scope.min+"m";
+ }
+
+
 	
 	
 	
